@@ -1,0 +1,97 @@
+PODS:
+  - DKImagePickerController/Core (4.3.4):
+    - DKImagePickerController/ImageDataManager
+    - DKImagePickerController/Resource
+  - DKImagePickerController/ImageDataManager (4.3.4)
+  - DKImagePickerController/PhotoGallery (4.3.4):
+    - DKImagePickerController/Core
+    - DKPhotoGallery
+  - DKImagePickerController/Resource (4.3.4)
+  - DKPhotoGallery (0.0.17):
+    - DKPhotoGallery/Core (= 0.0.17)
+    - DKPhotoGallery/Model (= 0.0.17)
+    - DKPhotoGallery/Preview (= 0.0.17)
+    - DKPhotoGallery/Resource (= 0.0.17)
+    - SDWebImage
+    - SwiftyGif
+  - DKPhotoGallery/Core (0.0.17):
+    - DKPhotoGallery/Model
+    - DKPhotoGallery/Preview
+    - SDWebImage
+    - SwiftyGif
+  - DKPhotoGallery/Model (0.0.17):
+    - SDWebImage
+    - SwiftyGif
+  - DKPhotoGallery/Preview (0.0.17):
+    - DKPhotoGallery/Model
+    - DKPhotoGallery/Resource
+    - SDWebImage
+    - SwiftyGif
+  - DKPhotoGallery/Resource (0.0.17):
+    - SDWebImage
+    - SwiftyGif
+  - DocuSign (2.12)
+  - docusign_flutter (1.0.0):
+    - DocuSign (~> 2.11)
+    - Flutter
+  - file_picker (0.0.1):
+    - DKImagePickerController/PhotoGallery
+    - Flutter
+  - Flutter (1.0.0)
+  - path_provider_ios (0.0.1):
+    - Flutter
+  - SDWebImage (5.13.5):
+    - SDWebImage/Core (= 5.13.5)
+  - SDWebImage/Core (5.13.5)
+  - SwiftyGif (5.4.3)
+  - syncfusion_flutter_pdfviewer (0.0.1):
+    - Flutter
+  - url_launcher_ios (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - docusign_flutter (from `.symlinks/plugins/docusign_flutter/ios`)
+  - file_picker (from `.symlinks/plugins/file_picker/ios`)
+  - Flutter (from `Flutter`)
+  - path_provider_ios (from `.symlinks/plugins/path_provider_ios/ios`)
+  - syncfusion_flutter_pdfviewer (from `.symlinks/plugins/syncfusion_flutter_pdfviewer/ios`)
+  - url_launcher_ios (from `.symlinks/plugins/url_launcher_ios/ios`)
+
+SPEC REPOS:
+  trunk:
+    - DKImagePickerController
+    - DKPhotoGallery
+    - DocuSign
+    - SDWebImage
+    - SwiftyGif
+
+EXTERNAL SOURCES:
+  docusign_flutter:
+    :path: ".symlinks/plugins/docusign_flutter/ios"
+  file_picker:
+    :path: ".symlinks/plugins/file_picker/ios"
+  Flutter:
+    :path: Flutter
+  path_provider_ios:
+    :path: ".symlinks/plugins/path_provider_ios/ios"
+  syncfusion_flutter_pdfviewer:
+    :path: ".symlinks/plugins/syncfusion_flutter_pdfviewer/ios"
+  url_launcher_ios:
+    :path: ".symlinks/plugins/url_launcher_ios/ios"
+
+SPEC CHECKSUMS:
+  DKImagePickerController: b512c28220a2b8ac7419f21c491fc8534b7601ac
+  DKPhotoGallery: fdfad5125a9fdda9cc57df834d49df790dbb4179
+  DocuSign: 959d098098988dfd9e51d7c437fbb02b4c049c64
+  docusign_flutter: ce0b058fe3096dc900c1d263fc6a7b7ab31477b7
+  file_picker: 817ab1d8cd2da9d2da412a417162deee3500fc95
+  Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
+  path_provider_ios: 14f3d2fd28c4fdb42f44e0f751d12861c43cee02
+  SDWebImage: 23d714cd599354ee7906dbae26dff89b421c4370
+  SwiftyGif: 6c3eafd0ce693cad58bb63d2b2fb9bacb8552780
+  syncfusion_flutter_pdfviewer: bb9998884b864cfedf72628df3503bdf57e397c0
+  url_launcher_ios: 839c58cdb4279282219f5e248c3321761ff3c4de
+
+PODFILE CHECKSUM: 775997f741c536251164e3eacf6e34abf2eb7a17
+
+COCOAPODS: 1.11.3
