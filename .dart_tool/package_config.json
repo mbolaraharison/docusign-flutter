@@ -50,16 +50,16 @@
       "languageVersion": "2.18"
     },
     {
-      "name": "corsac_jwt",
-      "rootUri": "file:///Users/mbolaraharison_1_2/Dev/dependencies/flutter/.pub-cache/hosted/pub.dartlang.org/corsac_jwt-1.0.0-nullsafety.1",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
       "name": "crypto",
       "rootUri": "file:///Users/mbolaraharison_1_2/Dev/dependencies/flutter/.pub-cache/hosted/pub.dartlang.org/crypto-3.0.2",
       "packageUri": "lib/",
       "languageVersion": "2.14"
+    },
+    {
+      "name": "dart_jsonwebtoken",
+      "rootUri": "file:///Users/mbolaraharison_1_2/Dev/dependencies/flutter/.pub-cache/hosted/pub.dartlang.org/dart_jsonwebtoken-2.4.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
     },
     {
       "name": "encrypt",
@@ -78,6 +78,12 @@
       "rootUri": "file:///Users/mbolaraharison_1_2/Dev/dependencies/flutter/packages/flutter",
       "packageUri": "lib/",
       "languageVersion": "2.17"
+    },
+    {
+      "name": "flutter_dotenv",
+      "rootUri": "file:///Users/mbolaraharison_1_2/Dev/dependencies/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_dotenv-5.0.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
     },
     {
       "name": "flutter_lints",
@@ -116,12 +122,6 @@
       "languageVersion": "2.12"
     },
     {
-      "name": "logging",
-      "rootUri": "file:///Users/mbolaraharison_1_2/Dev/dependencies/flutter/.pub-cache/hosted/pub.dartlang.org/logging-1.1.0",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
       "name": "matcher",
       "rootUri": "file:///Users/mbolaraharison_1_2/Dev/dependencies/flutter/.pub-cache/hosted/pub.dartlang.org/matcher-0.12.12",
       "packageUri": "lib/",
@@ -148,12 +148,6 @@
     {
       "name": "pointycastle",
       "rootUri": "file:///Users/mbolaraharison_1_2/Dev/dependencies/flutter/.pub-cache/hosted/pub.dartlang.org/pointycastle-3.6.2",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
-      "name": "rsa_pkcs",
-      "rootUri": "file:///Users/mbolaraharison_1_2/Dev/dependencies/flutter/.pub-cache/hosted/pub.dartlang.org/rsa_pkcs-2.0.1",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -218,7 +212,7 @@
       "languageVersion": "2.12"
     }
   ],
-  "generated": "2022-11-22T21:28:17.288521Z",
+  "generated": "2022-11-24T17:53:33.969024Z",
   "generator": "pub",
   "generatorVersion": "2.18.2"
 }

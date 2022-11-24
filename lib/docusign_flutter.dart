@@ -1,12 +1,13 @@
 import 'dart:async';
 import 'dart:convert';
+import 'dart:developer';
 
+import 'package:dart_jsonwebtoken/dart_jsonwebtoken.dart';
 import 'package:docusign_flutter/model/access_token_model.dart';
 import 'package:docusign_flutter/model/captive_signing_model.dart';
 import 'package:docusign_flutter/model/envelope_model.dart';
 import 'package:docusign_flutter/model/input_token_model.dart';
 import 'package:flutter/services.dart';
-import 'package:corsac_jwt/corsac_jwt.dart';
 import 'package:http/http.dart' as http;
 
 import 'model/account_info.dart';
@@ -67,23 +68,18 @@ class DocusignFlutter {
   }
 
   static String _generateJWT(InputTokenModel inputTokenModel) {
-    var builder = JWTBuilder();
-    builder
-      ..issuer = inputTokenModel.integratorKey
-      ..issuedAt = DateTime.now()
-      ..expiresAt = DateTime.now().add(const Duration(minutes: 2))
-      ..audience = inputTokenModel.url
-      ..subject = inputTokenModel.userId
-      ..setClaim('scope', 'signature impersonation')
-      ..getToken(); // returns token without signature
-
-    var signer = JWTRsaSha256Signer(
-        privateKey: inputTokenModel.privateRSAKey,
-        publicKey: inputTokenModel.publicRSAKey);
-    var signedToken = builder.getSignedToken(signer);
-    var stringToken = signedToken.toString();
-
-    return stringToken;
+    final jwt = JWT({
+      'iat': (DateTime.now().millisecondsSinceEpoch / 1000).floor().toString(),
+      'exp': (DateTime.now().add(const Duration(minutes: 2)).millisecondsSinceEpoch / 1000).floor().toString(),
+      'scope': 'signature impersonation'
+    },
+    audience: Audience([inputTokenModel.url]),
+    subject: inputTokenModel.userId,
+    issuer: inputTokenModel.integratorKey
+    );
+    final key = RSAPrivateKey(inputTokenModel.privateRSAKey);
+    String token = jwt.sign(key, algorithm: JWTAlgorithm.RS256);
+    return token;
   }
 
   static void listenObserver(

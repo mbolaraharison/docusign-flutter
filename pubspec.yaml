@@ -1,7 +1,7 @@
 name: docusign_flutter
 description: Docusign SDK flutter plugin
-version: 1.0.0
-homepage:
+version: 1.0.1
+homepage: https://github.com/bentouch-digital/docusign-flutter.git
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
@@ -10,9 +10,10 @@ environment:
 dependencies:
   http: ^0.13.4
   encrypt: ^5.0.1
-  corsac_jwt: 1.0.0-nullsafety.1
   flutter:
     sdk: flutter
+  flutter_dotenv: ^5.0.2
+  dart_jsonwebtoken: ^2.4.2
 
 dev_dependencies:
   flutter_test:
