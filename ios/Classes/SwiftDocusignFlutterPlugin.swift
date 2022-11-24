@@ -110,7 +110,7 @@ public class SwiftDocusignFlutterPlugin: NSObject, FlutterPlugin, FlutterStreamH
             .addRecipientId("1")
             .addDocumentId("1")
             .addPageNumber(1)
-            .addFrame(CGRect(x: 75, y: 580, width: 50, height: 40))
+            .addFrame(CGRect(x: 100, y: 600, width: 50, height: 40))
             .build()
         
         let recipientA = DSMRecipientBuilder.init(for: .inPersonSigner)
