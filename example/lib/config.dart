@@ -154,7 +154,8 @@ class _ConfigState extends State<Config> {
           inPersonSignerName: 'Mbolatina Arimanana Raharison',
           inPersonSignerEmail: 'mb.raharison@gmail.com',
           signerName: 'Mbolatina Arimanana Raharison',
-          signerEmail: 'mb.raharison@gmail.com');
+          signerEmail: 'mb.raharison@gmail.com',
+          signers: ['Mbola', 'Aina']);
       var result = await DocusignFlutter.createEnvelope(envelopeModel);
       setState(() {
         _offlineEnvelopeId = result;

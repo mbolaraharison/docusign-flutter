@@ -16,4 +16,5 @@ struct CreateEnvelopeModel: Decodable {
     let inPersonSignerEmail: String;
     let signerName: String;
     let signerEmail: String;
+    let signers: Array<String>;
 }

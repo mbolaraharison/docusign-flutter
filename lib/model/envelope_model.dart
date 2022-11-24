@@ -9,6 +9,7 @@ class EnvelopeModel {
   late final String inPersonSignerEmail;
   late final String signerName;
   late final String signerEmail;
+  late final List<String> signers;
 
   EnvelopeModel({
     required this.filePath,
@@ -21,6 +22,7 @@ class EnvelopeModel {
     required this.inPersonSignerEmail,
     required this.signerName,
     required this.signerEmail,
+    required this.signers,
   });
 
   EnvelopeModel.fromJson(Map<String, dynamic> json)
@@ -33,7 +35,8 @@ class EnvelopeModel {
         inPersonSignerName = json['inPersonSignerName'],
         inPersonSignerEmail = json['inPersonSignerEmail'],
         signerName = json['signerName'],
-        signerEmail = json['signerEmail'];
+        signerEmail = json['signerEmail'],
+        signers = json['signers'];
 
   Map<String, dynamic> toJson() => {
         'filePath': filePath,
@@ -46,5 +49,6 @@ class EnvelopeModel {
         'inPersonSignerEmail': inPersonSignerEmail,
         'signerName': signerName,
         'signerEmail': signerEmail,
+        'signers': signers,
       };
 }

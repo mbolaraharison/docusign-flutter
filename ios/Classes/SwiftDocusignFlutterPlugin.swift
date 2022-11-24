@@ -1,6 +1,7 @@
 import Flutter
 import UIKit
 import DocuSignSDK
+import Darwin
 
 enum ChannelName {
   static let methods = "docusign_flutter/methods"
@@ -104,6 +105,9 @@ public class SwiftDocusignFlutterPlugin: NSObject, FlutterPlugin, FlutterStreamH
             loginResult?(buildError(title: Constants.IncorrectArguments, details: "incorrect json: \(params)"))
             return
         }
+        
+        fputs("signers here : \n", stderr)
+        fputs(createEnvelope.signers[0], stderr)
         
         let tabA = DSMTabBuilder.init(for: .signHere)
             .addName("signTab1")
